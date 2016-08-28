@@ -1,10 +1,10 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@page contentType="text/html" pageEncoding="UTF-8" %>
 <html>
 <head>
-    <title></title>
+    <title>teste</title>
 </head>
 <body>
-    <%@page contentType="text/html" pageEncoding="UTF-8" %>
-    <% response.sendRedirect("index.html"); %>
+teste
+    <%--<% response.sendRedirect("index.html"); %>--%>
 </body>
 </html>
