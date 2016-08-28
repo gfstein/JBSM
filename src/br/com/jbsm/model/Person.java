@@ -2,15 +2,20 @@ package br.com.jbsm.model;
 
 import com.sun.istack.internal.NotNull;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 
+@Entity
 public class Person {
     @Id
     @NotNull
+    @GeneratedValue
     private Integer id;
 
     @NotNull
-    private String nome;
+    private String name;
 
     @NotNull
     private String cpf;
@@ -26,12 +31,12 @@ public class Person {
         this.id = id;
     }
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getCpf() {

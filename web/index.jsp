@@ -4,7 +4,6 @@
     <title>teste</title>
 </head>
 <body>
-teste
-    <%--<% response.sendRedirect("index.html"); %>--%>
+    <% response.sendRedirect("index.html"); %>
 </body>
 </html>
