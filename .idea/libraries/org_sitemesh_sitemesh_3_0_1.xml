@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="org.sitemesh:sitemesh:3.0.1" type="repository">
+    <properties maven-id="org.sitemesh:sitemesh:3.0.1" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/sitemesh-3.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/servlet-api-2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ant-1.7.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ant-launcher-1.7.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

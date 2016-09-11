@@ -10,10 +10,7 @@
         <property name="hibernate.format_sql">true</property>
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.connection.autocommit">true</property>
-
-        <mapping class="br.com.jbsm.model.Person"/>
+        <mapping package="br.com.jbsm.model"/>
     </session-factory>
 
 </hibernate-configuration>
-
-

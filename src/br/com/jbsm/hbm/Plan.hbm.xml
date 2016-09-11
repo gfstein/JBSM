@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="br.com.jbsm.model.Plan" table="plan">
+        <id name="id" type="int" column="id">
+            <generator class="native"/>
+        </id>
+        <property name="name" column="name" type="string"/>
+        <property name="description" column="fone" type="string"/>
+        <property name="targetAudience" column="cell" type="string"/>
+        <property name="objective" column="address" type="string"/>
+        <property name="subject" column="cpf" type="string"/>
+        <property name="estrategy" column="rg" type="string"/>
+        <property name="resources" column="rgOrgao" type="string"/>
+        <property name="place" column="area" type="string"/>
+        <property name="relevance" column="subarea" type="string"/>
+        <property name="instruments" column="salary" type="int"/>
+        <property name="createDate" column="salary" type="int"/>
+        <property name="updateDate" column="salary" type="int"/>
+    </class>
+</hibernate-mapping>

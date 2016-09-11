@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="br.com.jbsm.model.Workshop" table="workshop">
+        <id name="id" type="int" column="id">
+            <generator class="native"/>
+        </id>
+        <many-to-one name="user" class="br.com.jbsm.model.User" column="id_user" cascade="save-update"/>
+        <many-to-one name="userMonitor" class="br.com.jbsm.model.User" column="id_user_monitor" cascade="save-update"/>
+        <many-to-one name="userLeader" class="br.com.jbsm.model.User" column="id_user_leader" cascade="save-update"/>
+        <property name="name" column="name" type="string"/>
+        <property name="description" column="description" type="string"/>
+        <property name="material" column="material" type="string"/>
+        <property name="anexo" column="anexo" type="string"/>
+        <property name="createDate" column="create_date" type="date"/>
+        <property name="updateDate" column="update_date" type="date"/>
+    </class>
+</hibernate-mapping>

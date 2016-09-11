@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="br.com.jbsm.model.Visit" table="visit">
+        <id name="id" type="int" column="id">
+            <generator class="native"/>
+        </id>
+        <many-to-one name="user" class="br.com.jbsm.model.User" column="id_user"/>
+        <many-to-one name="userMonitor" class="br.com.jbsm.model.User" column="id_user_monitor" cascade="save-update"/>
+        <many-to-one name="plan" class="br.com.jbsm.model.Plan" column="id_plan" cascade="save-update"/>
+        <many-to-one name="workshop" class="br.com.jbsm.model.Workshop" column="id_workshop" cascade="save-update"/>
+        <property name="instituitionName" column="instituition_name" type="string"/>
+        <property name="instituitionType" column="instituition_type" type="int"/>
+        <property name="instituitionCity" column="instituition_city" type="string"/>
+        <property name="instituitionMatter" column="instituition_matter" type="string"/>
+        <property name="numberVisitors" column="number_visitors" type="int"/>
+        <property name="fone" column="fone" type="string"/>
+        <property name="visitorsAge" column="visitors_age" type="int"/>
+        <property name="objective" column="objective" type="string"/>
+        <property name="assitance" column="ssistance" type="boolean"/>
+        <property name="status" column="status" type="int"/>
+        <property name="isActive" column="is_cative" type="boolean"/>
+        <property name="startDate" column="start_date" type="date"/>
+        <property name="endDate" column="end_date" type="date"/>
+        <property name="startDate" column="create_date" type="date"/>
+        <property name="updateDate" column="update_date" type="date"/>
+    </class>
+</hibernate-mapping>

@@ -14,6 +14,9 @@
     <form action="save.html" method="post">
         Nome: <input value="teste" type="text" name="name" ><br>
         cpf: <input value="12331241" type="text" name="cpf">
+        Login: <input value="will" type="text" name="login">
+        senha: <input value="1234" type="password" name="password">
+        email: <input value="willianw94@hotmail.com" type="email" name="email">
         <br>
         <button type="submit" name="enviar">enviar</button>
     </form>
